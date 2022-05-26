@@ -24,6 +24,10 @@ body {
   padding: 0 28.5rem;
   margin: 0 auto;
 }
+.block {
+  margin: 0 0 9rem 0;
+  padding: 0;
+}
 ul,
 li,
 a {
@@ -42,6 +46,10 @@ a {
 }
 .header-main__logo {
   width: 25%;
+  max-width: 28rem;
+}
+.header-main__logo img {
+  max-width: 28rem;
 }
 .header-main__menu {
   width: 55%;
@@ -114,6 +122,9 @@ a {
   color: #23303C;
   text-transform: uppercase;
 }
+.footer {
+  background-color: #F9F9F9;
+}
 .footer-main__sosial {
   padding: 5rem 0 4rem 0;
   width: 100%;
@@ -138,6 +149,9 @@ a {
   fill: none;
   stroke-width: 2;
   fill: #AD896C;
+}
+.footer-main__infor {
+  margin-bottom: 6.8rem;
 }
 .footer-main__infor .footer-logo {
   display: flex;
@@ -180,5 +194,93 @@ a {
 }
 .footer-main__infor .footer-infor__02 {
   width: 40%;
-  background-color: red;
+}
+.footer-main__infor .footer-infor__02 .infor-02__title h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #23303C;
+  text-transform: uppercase;
+}
+.footer-main__infor .footer-infor__02 .infor-02__content {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 0 3px;
+}
+.footer-main__infor .footer-infor__02 .infor-02__content img {
+  margin: 2rem 0 3rem 0;
+}
+.footer-main__infor .footer-infor__02 .infor-02__content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #23303C;
+  line-height: 130%;
+  margin: 0.7rem 0 2rem 0;
+  max-width: 430rem;
+  text-align: justify;
+}
+.footer-main__infor .footer-infor__02 .infor-02__content form {
+  width: 100%;
+}
+.footer-main__infor .footer-infor__02 .infor-02__content form input {
+  width: 100%;
+  max-width: 30rem;
+  height: 4rem;
+  outline: none;
+  border: 1px solid rgba(35, 48, 60, 0.2);
+  padding-left: 10%;
+}
+.footer-main__comment {
+  border-top: 1px solid rgba(173, 137, 108, 0.3);
+  border-bottom: 1px solid rgba(173, 137, 108, 0.3);
+  margin-bottom: 7.5rem;
+}
+.footer-main__comment .main-comment {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.footer-main__comment .main-comment .main-comment__imgae ul {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  gap: 0 10px;
+}
+.footer-main__comment .main-comment p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #23303C;
+  margin: 0;
+  margin-left: 8%;
+  padding: 4rem 0;
+}
+.title {
+  text-align: center;
+  min-height: 9rem;
+  margin: 0 0 5rem 0;
+}
+.title-main {
+  margin: 0 0 1rem 0;
+}
+.title-main h1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-size: 5rem;
+  color: #AD896C;
+  margin: 0;
+  padding: 2rem 0;
+}
+.title-second p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #23303C;
+  letter-spacing: 1px;
+  padding: 0;
 }
