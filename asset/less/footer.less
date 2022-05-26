@@ -1,0 +1,71 @@
+.footer {
+    &-main {
+        &__sosial {
+            padding: 5rem 0 4rem 0;
+            width: 100%;
+            border-bottom: 1px solid @brown-color;
+            margin-bottom: 50px;
+            .menu-list {
+                gap: 0 5rem;
+                margin: 0 auto;
+               
+                &__item {
+                    max-width: 24px;
+                    min-width: 20px;
+                }
+            }
+
+            #facebook, #instagram, #linkedin, #twitter {
+                .set-icon(24px, transparent, 2);
+                fill: @brown-color;
+            }
+        }
+
+        &__infor {
+            .footer-logo {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 4rem;
+            }
+
+            .footer-infor {
+                display: flex;
+                &__01 {
+                    width: 26%;
+
+                    .infor-01__title {
+                        h2 {
+                            margin: 0 0 1.5rem 0;
+                            padding: 0;
+                            .set-font(@Montserrat, 1.4rem, 400, @black-blue-color);
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .infor-01__content {
+                        margin: 0;
+                        padding: 0;
+                        .content__list {
+                            margin: 0;
+                            padding: 0;
+                            .content__item {
+                                margin: 0 0 1.1rem 0;
+                                padding: 0;
+
+                                .content__link {
+                                    .set-font(@Montserrat, 1.4rem, 400, @black-blue-color);
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__02 {
+                    width: 40%;
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

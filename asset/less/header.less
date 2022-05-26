@@ -1,0 +1,49 @@
+.header {
+    padding: 3.3rem 0 3.2rem 0;
+    border-bottom: 0.1rem solid @brown-color;
+
+    &-main {
+        .set-flex-center;
+
+        &__logo {
+            width: 25%;
+        }
+
+        &__menu {
+            width: 55%;
+        }
+
+        &__auth {
+            .set-flex-center;
+            justify-content: flex-end;
+            width: 20%;
+
+            .menu-list {
+                gap: 0 2rem;
+
+                &__item {
+                    max-width: 2rem;
+                    min-width: 1.2rem;
+                }
+            }
+
+            #search, #user, #shopping-bag {
+                .set-icon(20px, @black-blue-color, 1.5)
+            }
+
+            .auth-language {
+                .set-flex-center;
+
+                p {
+                    .set-font(@Manrope, 15px, 400, @black-blue-color);
+                    text-transform: uppercase;
+                }
+
+                #chevron-down {
+                    .set-icon(20px, @black-blue-color, 1);
+                    margin: auto 0;
+                }
+            }
+        }
+    }
+}
