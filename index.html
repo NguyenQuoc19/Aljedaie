@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Manrope&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- bootstrap icon -->
-
+    <!-- owl carousel -->
+        <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <!-- My css -->
     <link rel="stylesheet" href="./asset/css/style.css">
 
@@ -86,10 +87,46 @@
        </header>
 
        <main class="main">
-           <section class="banner"></section>
+           <section class="banner">
+               <div class="banner-main">
+                   <a href="#" class="banner-main__link">
+                        <svg class="icon" id="play">
+                            <use xlink:href="../asset/image/svg/icons.svg#play"></use>
+                        </svg>
+
+                        <p>WATCH THE VIDEO</p>
+                   </a>
+               </div>
+           </section>
 
            <div class="container">
-               <section class="partner"></section>
+               <section class="partner">
+                   <div class="partner-main">
+                       <div class="partner-main__list owl-carousel">
+                            <div class="partner-list__main">
+                                <img src="./asset/image/partner/partner1.png" alt="">
+                            </div>
+                            <div class="partner-list__main">
+                                <img src="./asset/image/partner/partner2.png" alt="">
+                            </div>
+                            <div class="partner-list__main">
+                                <img src="./asset/image/partner/partner3.png" alt="">
+                            </div>
+                            <div class="partner-list__main">
+                                <img src="./asset/image/partner/partner4.png" alt="">
+                            </div>
+                            <div class="partner-list__main">
+                                <img src="./asset/image/partner/partner5.png" alt="">
+                            </div>
+                            <div class="partner-list__main">
+                                <img src="./asset/image/partner/partner6.png" alt="">
+                            </div>
+                            <div class="partner-list__main">
+                                <img src="./asset/image/partner/partner7.png" alt="">
+                            </div>
+                       </div>
+                   </div>
+               </section>
                <section class="best">
                    <div class="block">
                        <div class="title">
@@ -99,6 +136,70 @@
                            <div class="title-second">
                                <p>OUR BESTSELLING PRODUCTS FROM THE BEST PARTNERS</p>
                            </div>
+                       </div>
+
+                       <div class="best-main">
+                            <div class="best-main__list owl-carousel">
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/pro1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/pro2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/pro3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                        </div>
                    </div>
                </section>
@@ -115,8 +216,43 @@
                     </div>
                </section>
                <section class="guide">
-                   
+                   <div class="block">
+                       <div class="guide-main">
+                           <div class="guide-main__left">
+                                <div class="guide-image__1"></div>
+                                <div class="guide-image__2"></div>
+                                <div class="guide-image__3"></div>
+                           </div>
+                           <div class="guide-main__right">
+                                <div class="title">
+                                    <div class="title-main">
+                                        <h1>Guide to buying cloth</h1>
+                                    </div>
+                                    <div class="title-second">
+                                        <p>guidelines to assist you with buyING CLOTH</p>
+                                    </div>
+                                </div>
+    
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nibh mauris turpis blandit. Mattis tellus eget faucibus vulputate eleifend tristique velit.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nibh mauris turpis blandit. Mattis tellus eget faucibus vulputate eleifend tristique velit.</p>
+                                </div>
+
+                                <div class="link">
+                                    <a href="#">
+                                        <p>TO KNOW MORE</p>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon" id="Arrow_Down_LG">
+                                            <use xlink:href="../asset/image/svg/icons.svg#Arrow_Down_LG"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
                </section>
+
                <section class="feature">
                     <div class="block">
                         <div class="title">
@@ -127,9 +263,112 @@
                                 <p>MEET OUR FEATURED PRODUCTS </p>
                             </div>
                         </div>
+
+                        <div class="feature-main"> 
+                            <div class="list-product owl-carousel">
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/product1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/product2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/product3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                </section>
-               <section class="about"></section>
+
+               <section class="about">
+                    <div class="block">
+                        <div class="about-main">
+                            <div class="about-main__left">
+                                <div class="title">
+                                    <div class="title-main">
+                                        <h1>About Us</h1>
+                                    </div>
+                                    <div class="title-second">
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </div>
+    
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nibh mauris turpis blandit. Mattis tellus eget faucibus vulputate eleifend tristique velit.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nibh mauris turpis blandit. Mattis tellus eget faucibus vulputate eleifend tristique velit.</p>
+                                </div>
+
+                                <div class="link">
+                                    <a href="#">
+                                        <p>TO KNOW MORE</p>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon" id="Arrow_Down_LG">
+                                            <use xlink:href="../asset/image/svg/icons.svg#Arrow_Down_LG"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="about-main__right">
+                                <div class="about-image__1"></div>
+                                <div class="about-image__2"></div>
+                                <div class="about-image__3"></div>
+                            </div>
+                        </div>
+                    </div>
+               </section>
+
                <section class="new">
                     <div class="block">
                         <div class="title">
@@ -138,6 +377,70 @@
                             </div>
                             <div class="title-second">
                                 <p>MEET OUR NEW PRODUCTS</p>
+                            </div>
+                        </div>
+
+                        <div class="new-main">
+                            <div class="list-product owl-carousel">
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/product1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/product2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product-view">
+                                        <div class="product-view__image">
+                                            <img src="../asset/image/product/product3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-infor">
+                                        <div class="product-infor__title">
+                                            <h3>Brand Name</h3>
+                                            <svg class="icon" id="heart">
+                                                <use xlink:href="../asset/image/svg/icons.svg#heart"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-infor__content">
+                                            <p>M8000-C9552-J7 Blue Suiting Cloth </p>
+                                            <span>SAR 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -150,6 +453,65 @@
                             </div>
                             <div class="title-second">
                                 <p>QUALITY, NEWS, VARIETY OF PRODUCTS, PERFECT SERVICE - ALL IN ONE PLACE</p>
+                            </div>
+                        </div>
+
+                        <div class="benefits-main">
+                            <div class="benefits-main__block">
+                                <div class="benefits-main__item">
+                                    <div class="benefits-item__icon">
+                                        <svg class="icon" id="globe">
+                                            <use xlink:href="../asset/image/svg/icons.svg#globe"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="benefits-main__infor">
+                                    <div class="benefits-infor__title">
+                                        <p>Online Support</p>
+                                    </div>
+                                    <div class="benefits-infor__content">
+                                        <p>Contact us 24 hours a day, 7 days a week </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="benefits-main__block">
+                                <div class="benefits-main__item">
+                                    <div class="benefits-item__icon">
+                                        <svg class="icon" id="calendar">
+                                            <use xlink:href="../asset/image/svg/icons.svg#calendar"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="benefits-main__infor">
+                                    <div class="benefits-infor__title">
+                                        <p>Return within 30 days</p>
+                                    </div>
+                                    <div class="benefits-infor__content">
+                                        <p>We offer you free return within 30 days </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="benefits-main__block">
+                                <div class="benefits-main__item">
+                                    <div class="benefits-item__icon">
+                                        <svg class="icon" id="credit-card">
+                                            <use xlink:href="../asset/image/svg/icons.svg#credit-card"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="benefits-main__infor">
+                                    <div class="benefits-infor__title">
+                                        <p>Payment Secure</p>
+                                    </div>
+                                    <div class="benefits-infor__content">
+                                        <p>We ensure secure payment with PEV</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -337,4 +699,12 @@
         </footer>
    </div>
 </body>
+
+<!-- jquery -->
+<script src="./asset/js/jquery.min.js"></script>
+<!-- owl carousel -->
+<script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+<!-- my js -->
+<script src="./asset/js/main.js"></script>
 </html>

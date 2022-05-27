@@ -1,0 +1,47 @@
+.guide {
+    .guide-main {
+        display: flex;
+
+        &__left {
+            position: relative;
+            min-width: 80.5rem;
+            min-height: 54.8rem;
+
+            .guide-image__1 {
+                .set-absolute-img (url(../image/guide/guide1.png), 43rem, 50rem, 23rem, 0);
+            }
+
+            .guide-image__2 {
+                .set-absolute-img (url(../image/guide/guide2.png), 43rem, 30rem, 0, 7rem);
+            }
+
+            .guide-image__2::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                border-bottom: 1px solid @brown-color;
+                left: 0;
+                bottom: -4rem;
+            }
+
+            .guide-image__3 {
+                .set-absolute-img (url(../image/guide/guide3.png), 34.5rem, 38rem, 46rem, 16.8rem);
+            }
+
+            .guide-image__3::before {
+                content: "";
+                .set-absolute-img (url(../image/guide/guide4.png), 15.5rem, 29.6rem, 0, 8.3rem);
+            }
+        }
+
+        &__right {
+            .title {
+                text-align: start;
+            }
+
+            .link {
+                margin: 0 0 0 11.5rem;
+            }
+        }
+    }
+}

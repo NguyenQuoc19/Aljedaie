@@ -1,0 +1,47 @@
+.product {
+    background-color: #ffffff;
+    &-view {
+        width: 100%;
+        background-color: rgba(4, 17, 39, 0.15);
+        filter: drop-shadow(1px 1px 6px rgba(4, 17, 39, 0.15));
+
+        &__image {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &-infor {
+        &__title {
+            .set-flex-center;
+            justify-content: space-between;
+            margin: 1.3rem 0 0.8rem 0;
+            padding: 0.5rem 0;
+            h3 {
+                .set-font (@EB-Garamond, 2rem, 600, @black-blue-color);
+                text-transform: capitalize;
+                margin: 0;
+                padding: 0;
+            }
+
+            #heart {
+                .set-icon (24px, @brown-color, 1);
+            }
+        }
+
+        &__content {
+            p {
+                .set-font(@Montserrat, 1.4rem, 400, @black-blue-color);
+                margin: 0 0 1.5rem 0;
+                padding: 0;
+            }
+
+            span {
+                .set-font(@EB-Garamond, 18px, 600, @brown-color);
+                text-transform: uppercase;
+                padding: 0.5rem 0;
+            }
+        }
+    }
+
+}

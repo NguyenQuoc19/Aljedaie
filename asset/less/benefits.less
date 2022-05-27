@@ -1,0 +1,47 @@
+.benefits {
+    &-main {
+        .set-flex-center;
+        justify-content: space-around;
+
+        &__block {
+            .set-flex-center;
+
+            .benefits-main__item{
+                .set-flex-center;
+                width: 6rem;
+                height: 6rem;
+                border-radius: 100rem;
+                background: rgba(173, 137, 108, 0.05);
+                box-shadow: inset 2px 4px 9px rgba(173, 137, 108, 0.2);
+                margin-right: 3rem;
+                .benefits-item__icon {
+                    margin: 0 auto;
+
+                    #globe, #calendar, #credit-card {
+                        .set-icon(3.2rem, @brown-color, 1);
+                    }
+                }
+            }
+
+            .benefits-main__infor {
+                .benefits-infor__title {
+                    p {
+                        .set-font(@EB-Garamond, 22px, 500, @brown-color);
+                        padding: 1rem 0;
+                        margin: 0 0 0.6rem 0;
+                    }
+                }
+
+                .benefits-infor__content {
+                    p {
+                        .set-font(@Montserrat, 14px, 400, @black-blue-color);
+                        line-height: 150%;
+                        max-width: 18.7rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}

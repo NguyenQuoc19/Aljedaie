@@ -22,3 +22,31 @@
         }
     }
 }
+
+.content {
+    p {
+        .set-font(@Montserrat, 1.6rem, 400, @black-blue-color);
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+        line-height: 140%;
+        text-align: justify;
+        width: 43rem;
+        padding-left: 11.5rem;
+
+    }
+}
+
+.link {
+    .set-flex-center;
+    gap: 0 0.6rem;
+
+    #Arrow_Down_LG {
+        .set-icon(20px, @brown-color, 2)
+    }
+
+    p {
+        .set-font (@Montserrat, 1.4rem, 500, @brown-color);
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+    }
+}

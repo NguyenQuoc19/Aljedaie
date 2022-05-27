@@ -1,0 +1,28 @@
+.banner {
+    &-main {
+        position: relative;
+        background-image: url(../image/banner/banner.png);
+        background-size: cover;
+        width: 100%;
+        min-height: 700px;
+        &__link {
+            position: absolute;
+            .set-flex-center;
+            gap: 0 20px;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            #play {
+                .set-icon(1.8rem, @brown-color, 2);
+            }
+
+            p {
+                .set-font(@Montserrat, 1.4rem, 400, @brown-color);
+                letter-spacing: 2px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

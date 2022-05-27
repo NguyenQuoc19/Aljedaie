@@ -21,3 +21,15 @@
     font-size: @size;
     color: @color;
 }
+
+// where are your image
+.set-absolute-img (@url, @mw, @mh, @left, @top) {
+    position: absolute;
+    background-image: @url;
+    width: 100%;
+    height: 100%;
+    max-width: @mw;
+    max-height: @mh;
+    left: @left;
+    top: @top;
+}
