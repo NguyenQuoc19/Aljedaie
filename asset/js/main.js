@@ -51,3 +51,40 @@ $(".best-main__list").owlCarousel({
         },
     },
 });
+
+
+// our list 
+$(".our-list").owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2,
+        },
+        1000: {
+            items: 4,
+        },
+    },
+});
+
+$(".share-list").owlCarousel({
+    loop: true,
+    margin: 15,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2,
+        },
+        1000: {
+            items: 4,
+        },
+    },
+});
+

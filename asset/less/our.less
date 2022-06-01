@@ -1,0 +1,35 @@
+.our-main {
+    margin-bottom: 5rem;
+    .our-list {
+        &__item {
+            position: relative;
+
+            img {
+                // width: 30%;
+                height: 550px;
+                // width: 36rem;
+            }
+
+            .our-item__infor {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 4rem;
+
+                h3 {
+                    .set-font(@EB-Garamond, 3.2rem, 500, white);
+                    padding: 1rem 0;
+                    margin-bottom: 1rem;
+                    word-wrap: none;
+                }
+
+                .link {
+                    .set-flex-center;
+                    p {
+                        padding-bottom: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
