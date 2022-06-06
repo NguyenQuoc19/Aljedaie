@@ -19,3 +19,26 @@
         }
     }
 }
+
+.trending {
+    margin: 6rem 0 0 0 ;
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3.2rem 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .best {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .trending {
+        display: none;
+    }
+}

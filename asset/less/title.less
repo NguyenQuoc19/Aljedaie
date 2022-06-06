@@ -11,6 +11,7 @@
             margin: 0;
             padding: 2rem 0;
             white-space: nowrap;
+            line-height: 150%
         }
     }
 
@@ -51,4 +52,37 @@
         letter-spacing: 0.2rem;
         text-transform: uppercase;
     }
+}
+
+.tablet-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+
+    h1 {
+        .set-font (@TheSans, 3rem, 500, @black-blue-color);
+        position: relative;
+        line-height: 150%;
+
+        &::after,  &::before {
+            position: absolute;
+            content: "";
+            width: 5rem;
+            height: 1px;
+            border-top: 1px solid @black-blue-color;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    
+        &::after{
+            right: -6rem;
+        }
+    
+        &::before {
+            left: -6rem;
+        }
+    }
+
+  
 }

@@ -25,4 +25,169 @@
             }
         }
     }
+
+    //tablet
+    &-list {
+        position: relative;
+        margin-top: 7.2rem;
+
+        &__title {
+            position: absolute;
+            width: 80%;
+            text-align: center;
+            // height: 22rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+
+            h1 {
+                .set-font(@TheSans, 4.8rem, 400, white);
+                margin: 0 0 3rem 0;
+                padding: 2.4rem;
+                word-wrap: none;
+            }
+
+            p {
+                .set-font(@TheSans, 1.6rem, 400, white);
+                max-width: 50rem;
+                line-height: 150%;
+                margin: 0 auto;
+            }
+
+            .banner-list__link {
+                position: relative;
+                margin-top: 7.5rem;
+                cursor: pointer;
+                a {
+                    .set-font(@TheSans, 1.6rem, 400, white);
+                }
+            }
+
+            .banner-list__link::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 3.2rem;
+                border-right: 1px solid white;
+                top: -4rem;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+        }
+
+        &__images {
+            width: 100%;
+
+            .banner-list__image {
+                width: 100%;
+
+                .owl-dots {
+                    display: block !important;
+                    bottom: 50px;
+                    position: absolute;
+                    left: 0;
+                    right: 0px;
+                }
+            }
+        }
+    }
+
+    // exclusive
+    .exclusive {
+        display: flex;
+        justify-content: space-between;
+        margin: 3rem auto 0 auto;
+
+        &-main {
+            position: relative;
+            width: 48%;
+            height: 54rem;
+            background-image: url(../image/banner/exclusive/exclusive1.png);
+            background-size: cover;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 92%;
+                height: 92%;
+                border: 1px solid @blue-light;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .exclusive-title {
+            position: absolute;
+            width: 80%;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+
+            p {
+                .set-font(@TheSans, 1.4rem, 400, @blue-light);
+            }
+
+            h1 {
+                .set-font(@TheSans, 3.2rem, 400, white);
+                padding: 1.6rem;
+                margin: 1.4rem auto;
+            }
+
+            .exclusive-link {
+                position: relative;
+                margin-top: 5.5rem;
+                cursor: pointer;
+
+                a {
+                    .set-font(@TheSans, 1.4rem, 400, white);
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 2.7rem;
+                    border-right: 1px solid white;
+                    top: -4rem;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+            }
+        }
+        
+
+        &-extra {
+            width: 48%;
+            height: 54rem;
+            
+            &__item {
+                position: relative;
+                width: 100%;
+                height: 50%;
+                margin: 0;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .banner-main {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .banner .exclusive {
+        display: none;
+    }
+
+    .banner .banner-list {
+        display: none;
+    }
 }
