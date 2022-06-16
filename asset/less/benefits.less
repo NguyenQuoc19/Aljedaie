@@ -46,8 +46,103 @@
     }
 }
 
-@media only screen and (max-width: 1441px) {
+.collect {
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+
+    &-main {
+
+        .set-flex-center;
+        justify-content: space-around;
+        gap: 3rem 0;
+        flex-wrap: wrap;
+
+        &__product {
+            position: relative;
+            width: 31.2%;
+            // max-width: 38.5rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 90%;
+                height: 90%;
+                left: 0;
+                bottom: 0;
+                background-image: url(../image/collection/Group.png);
+                background-size: cover;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .collect-main__infor {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 90%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                display: none;
+
+                p {
+                    .set-font(@TheSans, 3.2rem, 400, white);
+                    padding: 1.6rem;
+                    margin: 1.4rem auto;
+                }
+
+                .collect-link {
+                    position: relative;
+                    margin-top: 5.5rem;
+                    cursor: pointer;
+    
+                    a {
+                        .set-font(@TheSans, 1.4rem, 400, white);
+                    }
+    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 1px;
+                        height: 2.7rem;
+                        border-right: 1px solid white;
+                        top: -4rem;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                }
+            }
+        }
+
+        &__product.active {
+            &::after {
+                position: absolute;
+                content: "";
+                width: 90%;
+                height: 90%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 1px solid @blue-light;
+            }
+
+            .collect-main__infor {
+                display: block;
+            }
+        }
+    }
+}   
+
+@media only screen and (max-width: 1440px) {
     .benefits {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1441px) {
+    .collect {
         display: none;
     }
 }

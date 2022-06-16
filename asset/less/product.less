@@ -47,18 +47,20 @@
 }
 
 .tablet-product {
-    width: 24%;
-    max-width: 28rem;
+    width: 23.1%;
     position: relative;
 
     &__images {
         width: 100%;
+
+        img {
+            width: 100% ;
+        }
     }
 
     &__title {
         padding: 2rem;
         text-align: center;
-        width: 100%;
 
         h3 {
             .set-font(@TheSans, 1.6rem, 400, @black-blue-color);
@@ -79,7 +81,6 @@
                 margin: 0 1rem 0 0 ;
                 opacity: 0.6;
                 text-decoration: line-through;
-                // display: none;
             }
 
             p {
@@ -94,9 +95,9 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    width: 6rem;
-    height: 2rem;
-    top: 2rem;
+    width: 21%;
+    height: 6%;
+    top: 3%;
     left: 0;
     .set-font(@TheSans, 1.5rem, 400, white);
 
@@ -109,10 +110,6 @@
 .tablet-product__hot{
     background-color:  #B32254;
 }
-
-// .tablet-product__hot span {
-//     display: block !important;
-// }
 
 .tablet-product__new{
     background-color:  #007677;
