@@ -4,15 +4,129 @@
 
         .list-product {
             .product {
-                padding: 1rem 1rem 0 1rem;
+                // padding: 1rem 1rem 0 1rem;
                 max-width: 31.5rem - 2rem;
             }
         }
     }
 }
 
-@media only screen and (max-width: 1441px) {
-    .new {
+.featured {
+    .tablet-title {
+        margin-bottom: 0;
+    }
+
+    &-main {
+        margin-bottom: 3.3rem;
+
+        .featured-nav {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            gap: 0 2.7rem;
+            margin-bottom: 4rem;
+
+            li {
+                a {
+                    .set-font(@TheSans, 1.4rem, 400, #4F4F4F);
+                    padding: 1rem 2rem;
+                }
+
+                a.active {
+                    border: 1px solid #E0E0E0;
+                    border-radius: 100rem;
+                }
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 3.2rem 0;
+        }
+    }
+
+    &-banner {
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            position: relative;
+            width: 49%;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 42, 0.3);
+            }
+
+            &.active::after {
+                position: absolute;
+                content: "";
+                width: 96%;
+                height: 94%;
+                border: 1px solid white;
+                z-index: 99;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .featured-banner__infor {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+
+                p {
+                    .set-font(@TheSans, 1.4rem, 400, white);
+                }
+
+                h2 {
+                    .set-font(@TheSans, 3.2rem, 400, white);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .new, .feature {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .featured {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .new, .feature {
+        display: block;
+
+        &-main {
+            .list-product {
+                width: 81%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .featured {
         display: none;
     }
 }

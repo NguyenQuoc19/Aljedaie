@@ -26,7 +26,9 @@ $(".list-product").owlCarousel({
             items: 1
         },
         768: {
-            items: 3,
+            items: 2,
+            autoWidth: true,
+
         },
         1000: {
             items: 4,
@@ -45,6 +47,8 @@ $(".best-main__list").owlCarousel({
         },
         768: {
             items: 2,
+            margin: 17,
+            autoWidth: true,
         },
         1000: {
             items: 3,
@@ -58,12 +62,15 @@ $(".our-list").owlCarousel({
     loop: true,
     margin: 30,
     nav: true,
+    items: 3,
     responsive: {
         0: {
             items: 1
         },
         768: {
-            items: 2,
+            items: 3,
+            autoWidth:true,
+            margin: 10,
         },
         1000: {
             items: 4,
@@ -73,7 +80,7 @@ $(".our-list").owlCarousel({
 
 $(".share-list").owlCarousel({
     loop: true,
-    margin: 15,
+    margin: 10,
     nav: true,
     responsive: {
         0: {
@@ -83,18 +90,20 @@ $(".share-list").owlCarousel({
             items: 2,
         },
         1000: {
-            items: 4,
+            items: 5,
         },
     },
 });
 
 
 //tablet banner
-
   $(".banner-list__images").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
     responsive: {
          0: {
               items: 1,
@@ -107,4 +116,36 @@ $(".share-list").owlCarousel({
          },
     },
 });
+
+// tablet panel 
+$(document).ready(function() {
+    $('.featured-nav a').click(function() {
+        $('.featured-main__list').hide();
+        $('.featured-nav a.active').removeClass('active');
+        $(this).addClass('active');
+
+        let featured = $(this).attr('href');
+        $(featured).fadeIn(1000);
+
+        return false;
+    });
+
+    $('.featured-nav li:first a').click();
+
+
+    // reponsive
+    let width = $(window).width();
+
+    if(width <= 768) {
+        $('#menu-search').appendTo($('.header-main'));
+    }
+
+
+    if(width <= 768) {
+        $('.auth-language').hide();
+        // $('.menu-list li:first a').appendTo($('.header-main'));
+        $('.guide-main__left').appendTo($('.title '));
+        $('.about-main__right').appendTo($('.about-main__left .title'));
+    }
+})
 

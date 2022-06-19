@@ -53,3 +53,35 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .guide {
+        display: block;
+        .guide-main {
+            flex-wrap: wrap;
+
+            &__right {
+                width: 100%;
+                text-align: center;
+
+                .title {
+                    text-align: center;
+                    h1 {
+                        padding: 0;
+                    }
+                }
+
+                .content {
+                    p {
+                        padding: 0;
+                        width: 100%;
+                    }
+                }
+
+                .link {
+                    display: none;
+                }
+            }
+        }
+    }
+}

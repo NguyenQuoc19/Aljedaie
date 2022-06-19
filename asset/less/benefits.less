@@ -146,3 +146,50 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 786px) {
+    .collect {
+        display: none;
+    }
+
+    .benefits {
+        display: block;
+
+        &-main {
+            flex-wrap: wrap;
+
+            &__block {
+                .title {
+                    .title-second {
+                        p {
+                            white-space: pre-wrap;
+                        }
+                    }
+                }
+            }
+
+            &__block {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 3rem;
+
+                .benefits-main__item {
+                    display: none;
+                }
+
+                .benefits-main__infor {
+                    width: 100%;
+                    margin: 0 auto;
+
+                    .benefits-infor__content {
+                        text-align: center;
+                        p {
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

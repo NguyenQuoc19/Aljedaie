@@ -162,7 +162,7 @@
         
 
         &-extra {
-            width: 48%;
+            width: 49%;
             height: 54rem;
             
             &__item {
@@ -189,5 +189,21 @@
 
     .banner .banner-list {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner .exclusive {
+        display: none;
+    }
+
+    .banner .banner-list {
+        display: none;
+    }
+
+    .banner-main {
+        display: block;
+        background-image: url(../image/banner/mobibanner.png);
+        min-height: 600px;
     }
 }
