@@ -1125,10 +1125,6 @@ h1 {
 .new-main {
   width: 100%;
 }
-.feature-main .list-product .product,
-.new-main .list-product .product {
-  max-width: 29.5rem;
-}
 .featured .tablet-title {
   margin-bottom: 0;
 }
@@ -1231,6 +1227,10 @@ h1 {
   .feature-main .list-product {
     width: 81%;
     margin: 0 auto;
+  }
+  .new-main .list-product .product,
+  .feature-main .list-product .product {
+    max-width: 29.5rem;
   }
   .featured {
     display: none;
